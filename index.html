@@ -15,32 +15,24 @@
 <body>
     <header class="container-fluid">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-              <a class="navbar-brand" href="#">DABI</a>
+            <div class="container">              
+              <a id="logo" class="navbar-brand" href="#"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="#">SERVICIOS</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="#">EQUIPO</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="#">HISTORIA</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  <li class="nav-item ms-3">
+                    <button class="btn-contacto">CONTACTO</button>
                   </li>
                 </ul>
               </div>
@@ -50,23 +42,24 @@
     <main>
         <section id="hero" class="container-fluid">
             <div class="container">
-                <h1 class="">
-                    Agencia de Diseño Multimedial
+                <h1>
+                    Todo comienza <br>con un punto.
                 </h1>
+                <div class="linea-horizontal-azul-centro"></div>
             </div>
         </section>
         
         <section id="explicacion-pieza" class="container-fluid">
           <div class="container">
-            <div class="row justify-content-center justify-content-center align-items-center">
-              <div class="col-md-6"> 
+            <div class="row justify-content-center justify-content-center align-items-center gap-4">
+              <div class="col-md-4"> 
                 <figure class="figure">
-                  <img src="images/yellow-red-blue-wassily-kandinsky.jpg" class="figure-img img-fluid" alt="Yellow Red Blue, Wassily Kandinsky">
-                  <!-- <figcaption class="figure-caption text-center">Yellow Red Blue, Wassily Kandinsky</figcaption> -->
+                  <img src="images/yellow-red-blue-wassily-kandinsky.jpg" class="figure-img img-fluid img-kandinsky" alt="Yellow Red Blue, Wassily Kandinsky">
                 </figure>
               </div>
-              <div class="col-md-6"> 
-                <h2>Amarillo, Rojo y Azul</h2>
+              <div class="col-md-5"> 
+                <h2>AMARILLO, ROJO Y AZUL</h2>
+                <div class="linea-horizontal-amarilla"></div>
                 <p>
                   Pintada en 1925 por Wassily Kandinsky, esta obra representa el equilibrio entre fuerzas opuestas:
                   <br>
@@ -79,33 +72,103 @@
           </div>
         </section>
 
-        <section id="equipo" class="container-fluid">
-          <div class="container">
-            <h2>Conocé al equipo</h2>
-            <div class="row">
-              <div class="card col-sm-6 mb-3 mb-sm-0">
-                <img src="images/daianacapovilla-alumna.jpg" class="card-img-top" alt="Daiana Capovilla, Diseño Multimedial">
-                <div class="card-body">
-                  <h5 class="card-title">Daiana Capovilla</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+        <section id="arte-p5js" class="container-fluid">
+          <figure>
+            <img src="images/arte-p5js.jpg" class="img-fluid" alt="Arte p5js">
+          </figure>
+        </section>
+
+        <section id="servicios" class="container-fluid">
+          <div class="container py-5"> <h2>SERVICIOS</h2>
+            <div class="linea-horizontal-amarilla mb-4"></div> <div class="row">
+
+              <div class="col-md-4">
+                <div class="card-equipo">
+                  <div class="card-body">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="circulo" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                      <circle cx="32" cy="32" r="32" fill="#2E47A3"/>
+                    </svg>                    
+                    <h3>STRATEGY</h3>
+                    <p class="p-equipo">
+                      Definimos la dirección creativa y el posicionamiento estratégico de tu marca.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="card col-sm-6 mb-3 mb-sm-0">
-                <img src="images/daianacapovilla-alumna.jpg" class="card-img-top" alt="Daiana Capovilla, Diseño Multimedial">
-                <div class="card-body">
-                  <h5 class="card-title">Abigail Fragati</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="col-md-4">
+                <div class="card-equipo">
+                  <div class="card-body">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="cuadrado" width="64" height="64" viewBox="0 0 64 64" fill="none" >
+                      <rect width="64" height="64" fill="#E63025"/>
+                    </svg>                      
+                    <h3>BRANDING</h3>
+                    <p class="p-equipo">
+                      Creamos identidades visuales completas: logo, paleta, tipografía y guías de estilo.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>       
+              <div class="col-md-4">
+                <div class="card-equipo">
+                  <div class="card-body">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="triangulo" width="74" height="64" viewBox="0 0 74 64" fill="none">
+                      <path d="M37 0L74 64H0L37 0Z" fill="#FFCC00"/>
+                    </svg>
+                    <h3>UX/UI & WEB</h3>
+                    <p class="p-equipo">
+                      Desarrollamos experiencias digitales accesibles, estéticas y funcionales.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>  
           </div>
         </section>
 
-        <footer id="footer" class="container-fluid">
+        <section id="equipo" class="container-fluid">
+          <div class="container py-5"> <h2>NUESTRO EQUIPO</h2>
+            <div class="linea-horizontal-amarilla mb-4"></div> <div class="row">
+              <div class="col-md-6">
+                <div class="card-equipo">
+                  <figure>
+                    <img src="images/dai.png" class="img-fluid w-100" alt="Daiana">
+                  </figure>
+                  <div class="card-body">
+                    <h3>Daiana</h3>
+                    <div class="linea-horizontal-azul"></div>
+                    <p class="p-equipo">
+                      Especialista en estrategia de marca y dirección creativa. Con más de 8 años de experiencia, Daiana transforma conceptos abstractos en identidades visuales coherentes y memorables.
+                    </p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-6">
+                <div class="card-equipo">
+                  <figure>
+                    <img src="images/abi.png" class="img-fluid w-100" alt="Abigail">
+                  </figure>
+                  <div class="card-body">
+                    <h3>Abigail</h3>
+                    <div class="linea-horizontal-roja"></div>
+                    <p class="p-equipo">
+                      Diseñadora digital y desarrolladora front-end. Abigail une diseño y tecnología para crear experiencias web innovadoras y funcionales.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </section>
+
+        <footer id="footer-dabi" class="container-fluid">
           <div class="container">
-            <p class="copyright">
+            <h2 class="h2-white">DABI</h2>
+            <div class="linea-horizontal-amarilla"></div>
+            <p class="p-white">Diseño y Programación Web I</p>
+            <p class="p-white">Profesor: Omar Toyos</p>
+            <div class="linea-horizontal"></div>
+            <p class="p-white">
               © DABI 2026. Todos los derechos reservados.
             </p>
           </div>
