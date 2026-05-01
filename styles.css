@@ -46,7 +46,7 @@ p {
   line-height: normal;
 }
 
-a {
+nav ul li a {
   color: #080808;
   text-decoration: none;
   font-family: "aptly", sans-serif;
@@ -143,14 +143,8 @@ a {
   background: #E63025;
 }
 
-.circulo {
-  margin-bottom: 1.5rem;
-}
-
-.cuadrado {
-  margin-bottom: 1.5rem;
-}
-
+.circulo,
+.cuadrado,
 .triangulo {
   margin-bottom: 1.5rem;
 }
@@ -158,16 +152,21 @@ a {
 
 #footer-dabi {
   background-color: #080808;
+  padding: 6.25rem;
+  border-top: 4px solid #FC0;
 }
 
-.h2-white {
-  color: #FAFAFA;
-}
-
-.p-white {
-  color: #FAFAFA;
-}
-
+.h2-white,
+.h3-white,
+.p-white,
 .copywrite {
   color: #FAFAFA;
+}
+
+.divider-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(250, 250, 250, 0.3);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
