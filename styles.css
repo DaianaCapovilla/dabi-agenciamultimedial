@@ -70,6 +70,58 @@ nav ul li a {
   border: 1px solid #080808;
 }
 
+/* Estilo para las 3 líneas del menu hamburguesa */
+.navbar-toggler {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  transition: .5s ease-in-out;
+  padding: 0;
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler .toggler-icon {
+  display: block;
+  position: absolute;
+  height: 0.125rem;
+  width: 100%;
+  background: #080808; 
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+/* Posicionamiento inicial de las líneas */
+.navbar-toggler .top-bar { top: 0px; }
+.navbar-toggler .middle-bar { top: 10px; }
+.navbar-toggler .bottom-bar { top: 20px; }
+
+/* --- ANIMACIÓN A CRUZ --- */
+
+/* La línea de arriba rota 45 grados */
+.navbar-toggler:not(.collapsed) .top-bar {
+  top: 10px;
+  transform: rotate(135deg);
+}
+
+/* La línea del medio desaparece */
+.navbar-toggler:not(.collapsed) .middle-bar {
+  opacity: 0;
+  left: -40px;
+}
+
+/* La línea de abajo rota -45 grados */
+.navbar-toggler:not(.collapsed) .bottom-bar {
+  top: 10px;
+  transform: rotate(-135deg);
+}
+
 #hero {
   display: flex;
   align-items: center;
